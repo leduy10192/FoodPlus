@@ -71,7 +71,7 @@
 
 ## Wireframes
 
-<img src="YOUR_WIREFRAME_IMAGE_URL" width=600>
+<img src="https://user-images.githubusercontent.com/47465901/79528144-1224d780-801e-11ea-8c56-222d84db0fa8.png" width=600>
 
 ### [BONUS] Digital Wireframes & Mockups
 

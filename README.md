@@ -71,9 +71,10 @@
 
 ## Wireframes
 
-<img src="https://user-images.githubusercontent.com/47465901/79528144-1224d780-801e-11ea-8c56-222d84db0fa8.png" width=600>
+<img src="https://user-images.githubusercontent.com/47465901/79528144-1224d780-801e-11ea-8c56-222d84db0fa8.png" width=850>
 
 ### [BONUS] Digital Wireframes & Mockups
 
-### [BONUS] Interactive Prototype
 
+### [BONUS] Interactive Prototype
+<img src="http://g.recordit.co/d88T9J4vJ0.gif" width=300>

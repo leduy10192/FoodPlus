@@ -11,7 +11,6 @@
 This app helps restaurant sell excess food at discounted price and helps consumers find food sources. This provides a way to reduce food waste and food insecurity.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
 - **Category:** Commercial App
 - **Mobile:** This app will be developed for mobile platforms but can also have an web-app version with the same functionality.
 - **Story:** Food sellers post items. Food consumers search and place order.

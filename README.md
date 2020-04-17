@@ -8,7 +8,7 @@
 
 ## Overview
 ### Description
-This app helps restaurant sell excess food at discounted price and helps consumers find food sources. This provides a way to reduce food waste and food insecurity.
+This app helps restaurant sell excess food at discounted price and helps consumers find food sources. This provides a way to reduce food waste and food insecurity.
 
 ### App Evaluation
 [Evaluation of your app across the following attributes]

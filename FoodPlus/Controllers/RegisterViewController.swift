@@ -7,26 +7,48 @@
 //
 
 import UIKit
-
+import Firebase
 class RegisterViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
-
     @IBOutlet weak var segmentControl: UISegmentedControl!
+    
+    let db = Firestore.firestore()
+    
+    var userType: String = K.FStore.restaurant
     
     override func viewDidLoad() {
         emailTextField.setLeftPaddingPoints(50)
         passwordTextField.setLeftPaddingPoints(50)
-        
+        print(userType)
     }
 
     @IBAction func segmentPicked(_ sender: UISegmentedControl) {
-        let x =  segmentControl.titleForSegment(at: sender.selectedSegmentIndex)
-        print(x)
+        let index = sender.selectedSegmentIndex
+        if index == 0 {
+            userType = K.FStore.restaurant
+        }else{
+            userType = K.FStore.member
+        }
+        print(userType)
     }
     
-    
+    @IBAction func registerPressed(_ sender: UIButton) {
+        if let email = emailTextField.text, let password = passwordTextField.text{
+            Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+                if let e = error{
+                    print(e)
+                }else{
+                    self.db.collection(K.FStore.users).addDocument(data: [
+                        K.FStore.email : email,
+                        K.FStore.userType: self.userType
+                    ])
+                    self.navigationController?.popToRootViewController(animated: true)
+                }
+            }
+        }
+    }
 }
 
 

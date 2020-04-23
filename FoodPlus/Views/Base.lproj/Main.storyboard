@@ -70,7 +70,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@2.com" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="Aoj-rf-cXz">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="member@1.com" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="Aoj-rf-cXz">
                                 <rect key="frame" x="43" y="248" width="329" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -101,6 +101,9 @@
                                 <state key="normal" title="LOGIN" backgroundImage="providerShape">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="KzD-Da-fGu" eventType="touchUpInside" id="NTk-7O-GEo"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Member Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VI5-ko-j9B">
                                 <rect key="frame" x="129" y="145" width="160" height="30"/>
@@ -117,11 +120,12 @@
                     <connections>
                         <outlet property="emailTextField" destination="Aoj-rf-cXz" id="PrR-Pj-nge"/>
                         <outlet property="passwordTextField" destination="KgM-OC-zus" id="CMk-qx-6ZZ"/>
+                        <segue destination="IKh-bx-GYm" kind="show" identifier="memberToHome" id="ovz-VK-SUm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="70f-43-NsB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="877" y="856"/>
+            <point key="canvasLocation" x="877" y="866"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="Cvb-ra-YJb">
@@ -158,6 +162,9 @@
                                 <state key="normal" title="SIGN UP" backgroundImage="providerShape">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="registerPressed:" destination="ioU-bs-E1d" eventType="touchUpInside" id="UpG-Sd-BYw"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you a ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5a-LE-fFD">
                                 <rect key="frame" x="43" y="396" width="105" height="27"/>
@@ -166,11 +173,11 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WRx-fC-6BF">
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="WRx-fC-6BF">
                                 <rect key="frame" x="35" y="450" width="331" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <segments>
-                                    <segment title="Business"/>
+                                    <segment title="Restaurant"/>
                                     <segment title="Member"/>
                                 </segments>
                                 <connections>
@@ -218,7 +225,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1@2.com" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="E0N-WK-i5M">
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="restaurant@1.com" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="E0N-WK-i5M">
                                 <rect key="frame" x="43" y="248" width="329" height="63"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
@@ -249,6 +256,9 @@
                                 <state key="normal" title="LOGIN" backgroundImage="providerShape">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="Ubv-Lr-aSK" eventType="touchUpInside" id="3jt-eA-fBP"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant Login" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="swh-Aa-D1M">
                                 <rect key="frame" x="113" y="148" width="188" height="30"/>
@@ -265,11 +275,62 @@
                     <connections>
                         <outlet property="emailTextField" destination="E0N-WK-i5M" id="mCE-nJ-ovj"/>
                         <outlet property="passwordTextField" destination="4jH-SC-MF4" id="X3u-mC-KMG"/>
+                        <segue destination="BjE-hk-WKS" kind="show" identifier="restaurantToHome" id="bio-Ks-GwI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y8T-FR-3OG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-694" y="856"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="hQZ-2D-3BR">
+            <objects>
+                <viewController id="BjE-hk-WKS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p8X-03-YYA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant Home Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SKU-gg-CRz">
+                                <rect key="frame" x="70" y="226" width="275" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="rJK-qX-jki"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Iaj-v5-XU4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C9I-PA-prJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-694" y="1608"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="E93-G0-n6H">
+            <objects>
+                <viewController id="IKh-bx-GYm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Cde-0n-OO9">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Buyer Home Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fI2-CG-H6D">
+                                <rect key="frame" x="87" y="202" width="275" height="83"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YA4-u6-d5T"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="qAi-nU-a7J"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gIi-Ck-1zV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="877" y="1608"/>
         </scene>
     </scenes>
     <resources>

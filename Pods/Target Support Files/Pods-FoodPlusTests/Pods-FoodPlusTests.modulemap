@@ -1,0 +1,6 @@
+framework module Pods_FoodPlusTests {
+  umbrella header "Pods-FoodPlusTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

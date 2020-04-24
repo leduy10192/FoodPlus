@@ -96,6 +96,10 @@ This app helps restaurant sell excess food at discounted price and helps consume
 ### Networking
 * Authentication with Firestore
 * Fetch restaurant order
+* Add new order collection
 * Update restaurant order
 * Fetch/Delete member cart items
 * Fetch/Add member order items
+* Update order status
+
+<img src = "https://user-images.githubusercontent.com/47465901/80168641-3b061900-8598-11ea-99c2-d78669c488cc.png">

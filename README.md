@@ -88,3 +88,14 @@ This app helps restaurant sell excess food at discounted price and helps consume
 ### [BONUS] Interactive Prototype
 
 <img src="http://g.recordit.co/d88T9J4vJ0.gif" width=300>
+
+## Schema
+### Model
+<img src="https://user-images.githubusercontent.com/47465901/80168059-ced6e580-8596-11ea-9f7a-c7a7b6c90563.png" width = 500>
+
+### Networking
+* Authentication with Firestore
+* Fetch restaurant order
+* Update restaurant order
+* Fetch/Delete member cart items
+* Fetch/Add member order items

@@ -102,4 +102,4 @@ This app helps restaurant sell excess food at discounted price and helps consume
 * Fetch/Add member order items
 * Update order status
 
-<img src = "https://user-images.githubusercontent.com/47465901/80168641-3b061900-8598-11ea-99c2-d78669c488cc.png">
+<img src = "https://user-images.githubusercontent.com/47465901/80168641-3b061900-8598-11ea-99c2-d78669c488cc.png" width = 700>

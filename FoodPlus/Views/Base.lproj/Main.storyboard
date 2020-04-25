@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="29n-3N-20a">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Nrv-ay-API">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -495,6 +495,10 @@
                     <navigationItem key="navigationItem" title="Your Item" id="5ZV-nh-tcx"/>
                     <connections>
                         <outlet property="itemImageView" destination="nLX-dA-OBm" id="ebH-Kk-BKm"/>
+                        <outlet property="itemNameLabel" destination="IEZ-NW-1zj" id="7mu-wb-LJ6"/>
+                        <outlet property="priceLabel" destination="Szm-LR-pWo" id="76D-TI-Ons"/>
+                        <outlet property="quantityLabel" destination="BRQ-r9-Z6J" id="kue-fZ-yjU"/>
+                        <outlet property="unitLabel" destination="8DR-mw-KVy" id="aZA-Uo-oaO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lQW-7b-tLh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

@@ -42,7 +42,7 @@ class RegisterViewController: UIViewController {
                     print(e)
                 }else{
                     self.db.collection(self.userType).document(email).setData([K.FStore.email : email])
-                    self.db.collection(self.userType).document(email).collection("order")
+                    self.db.collection(self.userType).document(email).collection("orders")
                         .addDocument(data: [
                         K.FStore.email : email,
                     ])

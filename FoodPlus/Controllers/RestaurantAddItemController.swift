@@ -8,32 +8,57 @@
 
 import UIKit
 import AlamofireImage
+import PopupDialog
 
 class RestaurantAddItemController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-
+     
+    
     @IBOutlet weak var itemImageView: UIImageView!
+    var imagePicker = UIImagePickerController()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        imagePicker.delegate = self
         // Do any additional setup after loading the view.
     }
     
     @IBAction func onCameraButton(_ sender: Any) {
-        let picker = UIImagePickerController()
-        picker.delegate = self
-        picker.allowsEditing = true
-        
-        //Check if the camera is avaiblabe, otherwise the app will crash{
-        if UIImagePickerController.isSourceTypeAvailable(.camera){
-            //if available, open up the camera
-            picker.sourceType = .camera
-            
-            //if simulator, camera not available, use photo library
-            picker.sourceType = .photoLibrary
+
+        let alert = UIAlertController(title: "Choose Image", message: nil, preferredStyle: .actionSheet)
+        alert.addAction(UIAlertAction(title: "Camera", style: .default, handler: { _ in
+            self.openCamera()
+        }))
+
+        alert.addAction(UIAlertAction(title: "Gallery", style: .default, handler: { _ in
+            self.openGallary()
+        }))
+
+        alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
+
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    func openCamera()
+    {
+        if(UIImagePickerController .isSourceTypeAvailable(UIImagePickerController.SourceType.camera))
+        {
+            imagePicker.sourceType = UIImagePickerController.SourceType.camera
+            imagePicker.allowsEditing = true
+            self.present(imagePicker, animated: true, completion: nil)
         }
-        
-        present(picker, animated: true, completion: nil)
+        else
+        {
+            let alert  = UIAlertController(title: "Warning", message: "You don't have camera", preferredStyle: .alert)
+            alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+    }
+
+    func openGallary()
+    {
+        imagePicker.sourceType = UIImagePickerController.SourceType.photoLibrary
+        imagePicker.allowsEditing = true
+        self.present(imagePicker, animated: true, completion: nil)
     }
     
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
@@ -41,7 +66,7 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
         // This image is very large, Heroku has a limit of size image can upload -> import Alamofire and resize it
         let size = CGSize(width: 300, height: 300)
         
-        let scaledImage = image.af_imageAspectScaled(toFill: size)
+        let scaledImage = image.af.imageAspectScaled(toFill: size)
         
         itemImageView.image = scaledImage
         
@@ -50,8 +75,13 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
         
     }
     
+
     
     @IBAction func onSubmit(_ sender: Any) {
+        
+    }
+    
+    @objc fileprivate func uploadPhoto(){
         
     }
     /*
@@ -65,3 +95,5 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
     */
 
 }
+
+

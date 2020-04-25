@@ -7,7 +7,11 @@ target 'FoodPlus' do
   # Pods for FoodPlus
 	pod 'Firebase/Auth'
   	pod 'Firebase/Firestore'
-    pod "AlamofireImage"
+    	pod 'Firebase/Storage'
+	pod 'AlamofireImage'
+	pod 'Kingfisher'
+	pod "TinyConstraints"
+	pod 'PopupDialog'
 
   target 'FoodPlusTests' do
     inherit! :search_paths

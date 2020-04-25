@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+
 class RegisterViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
@@ -40,9 +41,10 @@ class RegisterViewController: UIViewController {
                 if let e = error{
                     print(e)
                 }else{
-                    self.db.collection(K.FStore.users).addDocument(data: [
+                    self.db.collection(self.userType).document(email).setData([K.FStore.email : email])
+                    self.db.collection(self.userType).document(email).collection("order")
+                        .addDocument(data: [
                         K.FStore.email : email,
-                        K.FStore.userType: self.userType
                     ])
                     self.navigationController?.popToRootViewController(animated: true)
                 }

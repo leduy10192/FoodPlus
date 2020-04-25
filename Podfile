@@ -7,6 +7,7 @@ target 'FoodPlus' do
   # Pods for FoodPlus
 	pod 'Firebase/Auth'
   	pod 'Firebase/Firestore'
+    pod "AlamofireImage"
 
   target 'FoodPlusTests' do
     inherit! :search_paths

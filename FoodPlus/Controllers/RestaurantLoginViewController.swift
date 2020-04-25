@@ -39,13 +39,10 @@ class RestaurantLoginViewController: UIViewController {
                     alert.addAction(OKAction)
                     self.present(alert, animated: true, completion: nil)
                 }else{
-                    let  result = self.db.collection(K.FStore.users).whereField(K.FStore.email, isEqualTo: email)
-                    result.getDocuments { (querySnapshot, error) in
-                        if let e = error{
-                            print("Error: \(e)")
-                        }else{
-                            let userType = querySnapshot!.documents[0].data()[K.FStore.userType] as! String
-                            if userType == K.FStore.restaurant{
+                    let result = self.db.collection(K.FStore.restaurant).document(email)
+                    result.getDocument { (snapshot, error) in
+                        if let doc = snapshot{
+                            if doc.exists{
                                 self.performSegue(withIdentifier: K.restaurantLogSeg, sender: self)
                             }else{
                                 let alert = UIAlertController(
@@ -53,7 +50,6 @@ class RestaurantLoginViewController: UIViewController {
                                 message: "User Login failed: Please login using Member Portal",
                                 preferredStyle: UIAlertController.Style.alert)
                                 let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
-                                    
                                 }
                                 alert.addAction(OKAction)
                                 self.present(alert, animated: true, completion: nil)
@@ -76,3 +72,24 @@ class RestaurantLoginViewController: UIViewController {
     */
 
 }
+//let  result = self.db.collection(K.FStore.restaurant).whereField(K.FStore.email, isEqualTo: email)
+//result.getDocuments { (querySnapshot, error) in
+//    if let e = error{
+//        print("Error: \(e)")
+//    }else{
+//        let userType = querySnapshot!.documents[0].data()[K.FStore.userType] as! String
+//        if userType == K.FStore.restaurant{
+//            self.performSegue(withIdentifier: K.restaurantLogSeg, sender: self)
+//        }else{
+//            let alert = UIAlertController(
+//            title: "Invalid Login",
+//            message: "User Login failed: Please login using Member Portal",
+//            preferredStyle: UIAlertController.Style.alert)
+//            let OKAction = UIAlertAction(title: "OK", style: .default) { (action) in
+//
+//            }
+//            alert.addAction(OKAction)
+//            self.present(alert, animated: true, completion: nil)
+//        }
+//    }
+//}

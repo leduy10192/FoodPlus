@@ -9,12 +9,14 @@
 struct K {
     static let restaurantLogSeg = "restaurantToHome"
     static let memberLogSeg = "memberToHome"
+    static let cellNibName = "PostCell"
+    static let cellIdentifier = "PostCell"
+
     struct FStore {
-        static let users = "users"
-        static let email = "email"
-        static let userType = "userType"
         static let restaurant = "restaurant"
         static let member = "member"
+        static let email = "email"
+        static let userType = "userType"
     }
 }
 

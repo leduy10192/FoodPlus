@@ -13,7 +13,19 @@ class RegisterViewController: UIViewController {
     
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var passwordTextField: UITextField!
+    @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var segmentControl: UISegmentedControl!
+    
+    @IBOutlet weak var addressLabel: UILabel!
+    @IBOutlet weak var streetField: UITextField!
+    @IBOutlet weak var cityField: UITextField!
+    @IBOutlet weak var stateField: UITextField!
+    @IBOutlet weak var zipField: UITextField!
+    
+    @IBOutlet weak var signUpTop: NSLayoutConstraint!
+    
+    @IBOutlet weak var signUpButton: UIButton!
+    
     
     let db = Firestore.firestore()
     
@@ -22,6 +34,11 @@ class RegisterViewController: UIViewController {
     override func viewDidLoad() {
         emailTextField.setLeftPaddingPoints(50)
         passwordTextField.setLeftPaddingPoints(50)
+        phoneTextField.setLeftPaddingPoints(50)
+        streetField.setLeftPaddingPoints(10)
+        cityField.setLeftPaddingPoints(10)
+        stateField.setLeftPaddingPoints(10)
+        zipField.setLeftPaddingPoints(10)
         print(userType)
     }
 
@@ -29,8 +46,26 @@ class RegisterViewController: UIViewController {
         let index = sender.selectedSegmentIndex
         if index == 0 {
             userType = K.FStore.restaurant
+            addressLabel.isHidden = false
+            streetField.isHidden = false
+            cityField.isHidden = false
+            stateField.isHidden = false
+            zipField.isHidden = false
+            let duration: TimeInterval = 0.5
+                 UIView.animate(withDuration: duration, animations: {
+                    self.signUpTop.constant = 700
+                           }, completion: nil)
         }else{
             userType = K.FStore.member
+            addressLabel.isHidden = true
+            streetField.isHidden = true
+            cityField.isHidden = true
+            stateField.isHidden = true
+            zipField.isHidden = true
+            let duration: TimeInterval = 0.5
+             UIView.animate(withDuration: duration, animations: {
+                self.signUpTop.constant = 350
+                       }, completion: nil)
         }
         print(userType)
     }

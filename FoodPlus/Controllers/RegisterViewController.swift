@@ -15,6 +15,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var phoneTextField: UITextField!
     @IBOutlet weak var segmentControl: UISegmentedControl!
+    @IBOutlet weak var nameTextField: UITextField!
     
     @IBOutlet weak var addressLabel: UILabel!
     @IBOutlet weak var streetField: UITextField!
@@ -35,6 +36,7 @@ class RegisterViewController: UIViewController {
         emailTextField.setLeftPaddingPoints(50)
         passwordTextField.setLeftPaddingPoints(50)
         phoneTextField.setLeftPaddingPoints(50)
+        nameTextField.setLeftPaddingPoints(50)
         streetField.setLeftPaddingPoints(10)
         cityField.setLeftPaddingPoints(10)
         stateField.setLeftPaddingPoints(10)
@@ -71,12 +73,36 @@ class RegisterViewController: UIViewController {
     }
     
     @IBAction func registerPressed(_ sender: UIButton) {
-        if let email = emailTextField.text, let password = passwordTextField.text{
+        guard let email = emailTextField.text, email != "",
+            let password = passwordTextField.text, password != ""
+            else {
+                presentAlert(title: "Invalid Signup", message: "Some Fields are missing")
+                return
+            }
+        if let email = emailTextField.text,
+            let password = passwordTextField.text,
+            let phoneNum = phoneTextField.text,
+            let name = nameTextField.text,
+            let street = streetField.text,
+            let city = cityField.text,
+            let state = stateField.text,
+            let zip = zipField.text
+            {
             Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
                 if let e = error{
-                    print(e)
+                    self.presentAlert(title: "Invalid Signup", message: "\(e.localizedDescription)")
                 }else{
-                    self.db.collection(self.userType).document(email).setData([K.FStore.email : email])
+                    self.db.collection(self.userType).document(email).setData([
+                        K.FStore.email : email,
+                        K.FStore.name : name,
+                        K.FStore.phoneNumber : phoneNum,
+                        K.FStore.street : street,
+                        K.FStore.city : city,
+                        K.FStore.state: state,
+                        K.FStore.zip: zip
+                    
+                    ])
+                    
                     self.db.collection(self.userType).document(email).collection("orders")
                         .addDocument(data: [
                         K.FStore.email : email,
@@ -85,6 +111,12 @@ class RegisterViewController: UIViewController {
                 }
             }
         }
+    }
+    
+    func presentAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        present(alert, animated: true)
     }
 }
 

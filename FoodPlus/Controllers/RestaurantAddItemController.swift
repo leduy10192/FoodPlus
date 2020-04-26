@@ -135,12 +135,13 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
                     K.FStore.uid: documentUid,
                     K.FStore.imageUrl: urlString,
                     K.FStore.email : email,
-                    K.FStore.status : K.FStore.avail,
+                    K.FStore.isAvail: true,
                     K.FStore.itemName : itemName,
                     K.FStore.quanity : quantity,
                     K.FStore.unit : unit,
-                    K.FStore.price : price
-                ]
+                    K.FStore.price : price,
+                    K.FStore.date: Date().timeIntervalSince1970
+                    ] as [String : Any]
                 
                 dataReference.setData(data) { (err) in
                     if let err = err {
@@ -149,7 +150,8 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
                     }
                     UserDefaults.standard.set(documentUid, forKey: K.FStore.uid)
                     self.itemImageView.image = #imageLiteral(resourceName: "image_placeholder")
-                    self.presentAlert(title: "Sucessful", message: "Item has been posted")
+//                     self.presentAlert(title: "Sucessful", message: "Item has been posted")
+                    self.navigationController?.popViewController(animated: true)
                 }
                 
             }

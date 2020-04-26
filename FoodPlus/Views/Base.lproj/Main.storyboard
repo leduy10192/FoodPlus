@@ -137,29 +137,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="gI6-p6-6Wh">
-                                <rect key="frame" x="43" y="120" width="329" height="46"/>
+                                <rect key="frame" x="43" y="120" width="329" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Phone Number" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="trY-n2-zja">
-                                <rect key="frame" x="43" y="251" width="329" height="46"/>
+                                <rect key="frame" x="43" y="222" width="329" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="icon-mail" translatesAutoresizingMaskIntoConstraints="NO" id="78E-mZ-uvj">
-                                <rect key="frame" x="54" y="129" width="29" height="29"/>
+                                <rect key="frame" x="54" y="130" width="22" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="gZe-ad-vwd">
-                                <rect key="frame" x="43" y="182" width="329" height="50"/>
+                                <rect key="frame" x="43" y="171" width="329" height="38"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="icon-padlock" translatesAutoresizingMaskIntoConstraints="NO" id="5N4-lC-1s9">
-                                <rect key="frame" x="54" y="193" width="29" height="28"/>
+                                <rect key="frame" x="53" y="178" width="22" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Are you a ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g5a-LE-fFD">
@@ -222,7 +222,17 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="old-telephone-ringing" translatesAutoresizingMaskIntoConstraints="NO" id="9Qu-lY-ohT">
-                                <rect key="frame" x="54" y="260" width="26" height="28"/>
+                                <rect key="frame" x="54" y="230" width="22" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Name" minimumFontSize="17" background="textField" translatesAutoresizingMaskIntoConstraints="NO" id="zgn-ce-LY2">
+                                <rect key="frame" x="43" y="275" width="329" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="icon-account" translatesAutoresizingMaskIntoConstraints="NO" id="V4e-ID-5VP">
+                                <rect key="frame" x="53" y="283" width="20" height="19"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -238,6 +248,7 @@
                         <outlet property="addressLabel" destination="C0B-J0-mWR" id="MXD-xV-NER"/>
                         <outlet property="cityField" destination="dRe-ka-ayX" id="OsG-tA-BtB"/>
                         <outlet property="emailTextField" destination="gI6-p6-6Wh" id="trJ-JN-TuY"/>
+                        <outlet property="nameTextField" destination="zgn-ce-LY2" id="RSb-On-uis"/>
                         <outlet property="passwordTextField" destination="gZe-ad-vwd" id="5Xg-Qq-Krv"/>
                         <outlet property="phoneTextField" destination="trY-n2-zja" id="3MA-f5-Upf"/>
                         <outlet property="segmentControl" destination="WRx-fC-6BF" id="4jq-Sp-WWf"/>
@@ -344,7 +355,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="sSo-K3-tGk">
-                                <rect key="frame" x="0.0" y="198" width="414" height="698"/>
+                                <rect key="frame" x="0.0" y="190" width="414" height="706"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.1082497165" green="0.2622925639" blue="0.28235745429999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="fXP-Hg-FDC">
@@ -403,22 +414,29 @@
                                 </cells>
                             </collectionView>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kCA-of-XQq">
-                                <rect key="frame" x="0.0" y="88" width="414" height="102"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="94"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="icon-store" translatesAutoresizingMaskIntoConstraints="NO" id="zUo-Ty-Psl">
-                                        <rect key="frame" x="37" y="23" width="22" height="20"/>
+                                        <rect key="frame" x="25" y="14" width="22" height="20"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53H-uk-Lmw">
-                                        <rect key="frame" x="77" y="22" width="133" height="21"/>
+                                        <rect key="frame" x="68" y="9" width="133" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ab-tw-1bf">
-                                        <rect key="frame" x="77" y="51" width="151" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ab-tw-1bf">
+                                        <rect key="frame" x="70" y="32" width="63" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PhoneNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AQ-IB-bly">
+                                        <rect key="frame" x="68" y="62" width="111" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -590,6 +608,7 @@
     </scenes>
     <resources>
         <image name="d4cd21e1-7aad-4515-bc5e-1d8dd32e1419_200x200" width="200" height="200"/>
+        <image name="icon-account" width="20" height="19"/>
         <image name="icon-mail" width="21" height="16"/>
         <image name="icon-padlock" width="21" height="24"/>
         <image name="icon-store" width="22" height="20"/>

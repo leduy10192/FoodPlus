@@ -19,7 +19,13 @@ struct K {
 
         static let restaurant = "restaurant"
         static let member = "member"
+        static let name = "name"
         static let email = "email"
+        static let street = "street"
+        static let city = "city"
+        static let state = "state"
+        static let zip = "zip"
+        static let phoneNumber = "phoneNumber"
         static let userType = "userType"
         
         static let orders = "orders"
@@ -27,12 +33,13 @@ struct K {
         static let unit = "unit"
         static let quanity = "quantity"
         static let price = "price"
-        static let status = "status"
+        static let isAvail = "isAvail"
         static let avail = "avail"
         static let imagesFolder = "imagesFolder"
         static let imagesCollection = "imagesCollection"
         static let uid = "uid"
         static let imageUrl = "imageUrl"
+        static let date = "date"
     }
 }
 

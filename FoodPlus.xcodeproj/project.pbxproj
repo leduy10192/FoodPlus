@@ -181,14 +181,8 @@
 			children = (
 				0CA67B1D2451696000F606F1 /* WelcomeViewController.swift */,
 				0CA67B4C2451751E00F606F1 /* RegisterViewController.swift */,
-				0CA67B4E24517C7C00F606F1 /* MemberLoginViewController.swift */,
-				0CA67B502451895500F606F1 /* RestaurantLoginViewController.swift */,
-				0CEBD5392453C4F500E7EE65 /* RestaurantHomeViewController.swift */,
-				0CEBD53B2453C59800E7EE65 /* PostCell.swift */,
-				0CEBD53C2453C59800E7EE65 /* PostCell.xib */,
-				0CEBD53F245403BE00E7EE65 /* AddCell.swift */,
-				0CEBD540245403BE00E7EE65 /* AddCell.xib */,
-				0CEBD543245417A400E7EE65 /* RestaurantAddItemController.swift */,
+				0CBBAD4A245971B800CA70DC /* Member */,
+				0CBBAD492459719D00CA70DC /* Restaurant */,
 				0CEBD5452454C1F200E7EE65 /* RootViewController.swift */,
 			);
 			path = Controllers;
@@ -209,6 +203,28 @@
 				0CBBAD472458A52500CA70DC /* ResInfo.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		0CBBAD492459719D00CA70DC /* Restaurant */ = {
+			isa = PBXGroup;
+			children = (
+				0CA67B502451895500F606F1 /* RestaurantLoginViewController.swift */,
+				0CEBD5392453C4F500E7EE65 /* RestaurantHomeViewController.swift */,
+				0CEBD53B2453C59800E7EE65 /* PostCell.swift */,
+				0CEBD53C2453C59800E7EE65 /* PostCell.xib */,
+				0CEBD53F245403BE00E7EE65 /* AddCell.swift */,
+				0CEBD540245403BE00E7EE65 /* AddCell.xib */,
+				0CEBD543245417A400E7EE65 /* RestaurantAddItemController.swift */,
+			);
+			path = Restaurant;
+			sourceTree = "<group>";
+		};
+		0CBBAD4A245971B800CA70DC /* Member */ = {
+			isa = PBXGroup;
+			children = (
+				0CA67B4E24517C7C00F606F1 /* MemberLoginViewController.swift */,
+			);
+			path = Member;
 			sourceTree = "<group>";
 		};
 		0F6148A436002B4FA4151634 /* Pods */ = {

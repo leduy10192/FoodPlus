@@ -12,7 +12,7 @@ target 'FoodPlus' do
 	pod 'Kingfisher'
 	pod "TinyConstraints"
 	pod 'PopupDialog'
-
+	pod 'IQKeyboardManagerSwift'
   target 'FoodPlusTests' do
     inherit! :search_paths
     # Pods for testing

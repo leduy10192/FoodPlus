@@ -25,15 +25,17 @@ This app helps restaurant sell excess food at discounted price and helps consume
 **Required Must-have Stories**
 
 * Food provider
-   * User logs into app
-   * User can view current item list
-   * User can add a new item 
-   * Setting
+   - [x] New users can register
+   - [x] User logs into app
+   - [x] Users can view their information
+   - [x] User can view current item list
+   - [x] User can add a new item to the item list
+   - [ ] User can edit their info and items in the list
 * Food consumer
-   * User logs into app
-   * User can view current dishes
-   * User can add a dish to cart
-   * User can place order
+   - [x] User logs into app
+   - [ ] User can view current dishes
+   - [ ] User can add a dish to cart
+   - [ ] User can place order
    
 **Optional Nice-to-have Stories**
 

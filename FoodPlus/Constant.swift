@@ -31,7 +31,7 @@ struct K {
         static let orders = "orders"
         static let itemName = "name"
         static let unit = "unit"
-        static let quanity = "quantity"
+        static let quantity = "quantity"
         static let price = "price"
         static let isAvail = "isAvail"
         static let avail = "avail"

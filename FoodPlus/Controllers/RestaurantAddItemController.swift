@@ -137,7 +137,7 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
                     K.FStore.email : email,
                     K.FStore.isAvail: true,
                     K.FStore.itemName : itemName,
-                    K.FStore.quanity : quantity,
+                    K.FStore.quantity : quantity,
                     K.FStore.unit : unit,
                     K.FStore.price : price,
                     K.FStore.date: Date().timeIntervalSince1970
@@ -151,6 +151,7 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
                     UserDefaults.standard.set(documentUid, forKey: K.FStore.uid)
                     self.itemImageView.image = #imageLiteral(resourceName: "image_placeholder")
 //                     self.presentAlert(title: "Sucessful", message: "Item has been posted")
+                    self.activityIndicator.stopAnimating()
                     self.navigationController?.popViewController(animated: true)
                 }
                 

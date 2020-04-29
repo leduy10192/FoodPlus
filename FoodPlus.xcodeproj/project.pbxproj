@@ -20,6 +20,8 @@
 		0CA67B512451895500F606F1 /* RestaurantLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA67B502451895500F606F1 /* RestaurantLoginViewController.swift */; };
 		0CA67B5324518FBE00F606F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CA67B5224518FBE00F606F1 /* GoogleService-Info.plist */; };
 		0CA67B55245196FF00F606F1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA67B54245196FF00F606F1 /* Constant.swift */; };
+		0CBBAD462458998D00CA70DC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAD452458998D00CA70DC /* Item.swift */; };
+		0CBBAD482458A52500CA70DC /* ResInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAD472458A52500CA70DC /* ResInfo.swift */; };
 		0CEBD53A2453C4F500E7EE65 /* RestaurantHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEBD5392453C4F500E7EE65 /* RestaurantHomeViewController.swift */; };
 		0CEBD53D2453C59800E7EE65 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEBD53B2453C59800E7EE65 /* PostCell.swift */; };
 		0CEBD53E2453C59800E7EE65 /* PostCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CEBD53C2453C59800E7EE65 /* PostCell.xib */; };
@@ -69,6 +71,8 @@
 		0CA67B502451895500F606F1 /* RestaurantLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLoginViewController.swift; sourceTree = "<group>"; };
 		0CA67B5224518FBE00F606F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0CA67B54245196FF00F606F1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0CBBAD452458998D00CA70DC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		0CBBAD472458A52500CA70DC /* ResInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResInfo.swift; sourceTree = "<group>"; };
 		0CEBD5392453C4F500E7EE65 /* RestaurantHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantHomeViewController.swift; sourceTree = "<group>"; };
 		0CEBD53B2453C59800E7EE65 /* PostCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		0CEBD53C2453C59800E7EE65 /* PostCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostCell.xib; sourceTree = "<group>"; };
@@ -201,6 +205,8 @@
 		0CA67B4B2451708200F606F1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0CBBAD452458998D00CA70DC /* Item.swift */,
+				0CBBAD472458A52500CA70DC /* ResInfo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -474,9 +480,11 @@
 				0CA67B1E2451696000F606F1 /* WelcomeViewController.swift in Sources */,
 				0CEBD5462454C1F200E7EE65 /* RootViewController.swift in Sources */,
 				0CA67B1A2451696000F606F1 /* AppDelegate.swift in Sources */,
+				0CBBAD482458A52500CA70DC /* ResInfo.swift in Sources */,
 				0CA67B1C2451696000F606F1 /* SceneDelegate.swift in Sources */,
 				0CA67B512451895500F606F1 /* RestaurantLoginViewController.swift in Sources */,
 				0CEBD53D2453C59800E7EE65 /* PostCell.swift in Sources */,
+				0CBBAD462458998D00CA70DC /* Item.swift in Sources */,
 				0CA67B4F24517C7C00F606F1 /* MemberLoginViewController.swift in Sources */,
 				0CEBD53A2453C4F500E7EE65 /* RestaurantHomeViewController.swift in Sources */,
 				0CA67B4D2451751E00F606F1 /* RegisterViewController.swift in Sources */,

@@ -422,26 +422,34 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Restaurant Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53H-uk-Lmw">
-                                        <rect key="frame" x="68" y="9" width="133" height="21"/>
+                                        <rect key="frame" x="68" y="9" width="313" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ab-tw-1bf">
-                                        <rect key="frame" x="70" y="32" width="63" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ab-tw-1bf">
+                                        <rect key="frame" x="70" y="32" width="311" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="PhoneNumber" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6AQ-IB-bly">
-                                        <rect key="frame" x="68" y="62" width="111" height="21"/>
+                                        <rect key="frame" x="68" y="62" width="301" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PNd-rL-Hwk">
+                                        <rect key="frame" x="395" y="0.0" width="19" height="19"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="icon-edit"/>
+                                        <connections>
+                                            <action selector="editResInfoPressed:" destination="BjE-hk-WKS" eventType="touchUpInside" id="JKV-Vc-CCh"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.96327584980000003" green="0.9366956353" blue="0.7293780446" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </view>
@@ -457,6 +465,9 @@
                     </navigationItem>
                     <connections>
                         <outlet property="collectionView" destination="sSo-K3-tGk" id="jWf-Ct-fpB"/>
+                        <outlet property="resAddrLabel" destination="5ab-tw-1bf" id="hX7-tX-Zoc"/>
+                        <outlet property="resNameLabel" destination="53H-uk-Lmw" id="1aU-Ah-2P4"/>
+                        <outlet property="resPhoneLabel" destination="6AQ-IB-bly" id="X0Y-uh-tPg"/>
                         <segue destination="Nrv-ay-API" kind="show" identifier="RHomeToRAdd" id="za5-1t-tOG"/>
                     </connections>
                 </viewController>
@@ -609,6 +620,7 @@
     <resources>
         <image name="d4cd21e1-7aad-4515-bc5e-1d8dd32e1419_200x200" width="200" height="200"/>
         <image name="icon-account" width="20" height="19"/>
+        <image name="icon-edit" width="21" height="21"/>
         <image name="icon-mail" width="21" height="16"/>
         <image name="icon-padlock" width="21" height="24"/>
         <image name="icon-store" width="22" height="20"/>

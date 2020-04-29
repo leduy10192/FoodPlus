@@ -40,6 +40,7 @@ struct K {
         static let uid = "uid"
         static let imageUrl = "imageUrl"
         static let date = "date"
+        static let resName = "resName"
     }
 }
 

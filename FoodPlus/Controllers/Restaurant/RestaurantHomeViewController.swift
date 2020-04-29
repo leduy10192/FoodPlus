@@ -142,6 +142,7 @@ class RestaurantHomeViewController: UIViewController, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if indexPath.row == items.count {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "AddCell", for: indexPath) as! AddCell
+            
             return cell
         }else{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: K.cellIdentifier, for: indexPath) as! PostCell
@@ -159,6 +160,16 @@ class RestaurantHomeViewController: UIViewController, UICollectionViewDataSource
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         if indexPath.row == items.count {
            self.performSegue(withIdentifier: "RHomeToRAdd", sender: self)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+            if segue.identifier == "RHomeToRAdd" {
+            // remember to down cast it to the destination type (because default func doesn't know the new class type created)
+            // cast! forced down cast
+            let destinationVC = segue.destination as! RestaurantAddItemController
+                destinationVC.resInfo = self.resInfo
+            
         }
     }
     

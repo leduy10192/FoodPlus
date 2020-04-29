@@ -23,7 +23,7 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
     @IBOutlet weak var unitLabel: UITextField!
     @IBOutlet weak var priceLabel: UITextField!
     
-    
+    var resInfo : ResInfo?
     var imagePicker = UIImagePickerController()
     
     let db = Firestore.firestore()
@@ -108,6 +108,17 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
                 return
         }
         
+        guard let resName = resInfo?.name,
+            let phoneNumber = resInfo?.phoneNumber,
+            let street = resInfo?.street,
+            let city = resInfo?.city,
+            let state = resInfo?.state,
+            let zip = resInfo?.zip
+        else{
+            print("resInfo is nil")
+            return
+        }
+        
         let imageName = UUID().uuidString
         let imageReference = Storage.storage().reference().child(K.FStore.imagesFolder).child(imageName)
         
@@ -140,7 +151,13 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
                     K.FStore.quantity : quantity,
                     K.FStore.unit : unit,
                     K.FStore.price : price,
-                    K.FStore.date: Date().timeIntervalSince1970
+                    K.FStore.date: Date().timeIntervalSince1970,
+                    K.FStore.resName : resName,
+                    K.FStore.phoneNumber : phoneNumber,
+                    K.FStore.street : street,
+                    K.FStore.city : city,
+                    K.FStore.state : state,
+                    K.FStore.zip : zip
                     ] as [String : Any]
                 
                 dataReference.setData(data) { (err) in

@@ -105,3 +105,11 @@ This app helps restaurant sell excess food at discounted price and helps consume
 * Update order status
 
 <img src = "https://user-images.githubusercontent.com/47465901/80168641-3b061900-8598-11ea-99c2-d78669c488cc.png" width = 700>
+
+## Demo
+### Restaurant
+<p float="left">
+<img src = "http://g.recordit.co/KxrQjfFv3p.gif" width = 200 >"
+<img src = "http://g.recordit.co/EJTytGCpCY.gif" width = 200 hspace = 120>"
+<img src = "http://g.recordit.co/zDrqovgRrH.gif" width = 200 >"
+</p>

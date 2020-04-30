@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C0480C4245A25380020D9AF /* MemberHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0480C3245A25380020D9AF /* MemberHomeViewController.swift */; };
+		0C0480C7245A26D50020D9AF /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0480C5245A26D50020D9AF /* ItemCell.swift */; };
+		0C0480C8245A26D50020D9AF /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C0480C6245A26D50020D9AF /* ItemCell.xib */; };
+		0C0480CC245A4B900020D9AF /* MemberItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0480CB245A4B900020D9AF /* MemberItem.swift */; };
 		0CA67B1A2451696000F606F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA67B192451696000F606F1 /* AppDelegate.swift */; };
 		0CA67B1C2451696000F606F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA67B1B2451696000F606F1 /* SceneDelegate.swift */; };
 		0CA67B1E2451696000F606F1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA67B1D2451696000F606F1 /* WelcomeViewController.swift */; };
@@ -52,6 +56,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0C0480C3245A25380020D9AF /* MemberHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberHomeViewController.swift; sourceTree = "<group>"; };
+		0C0480C5245A26D50020D9AF /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		0C0480C6245A26D50020D9AF /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		0C0480CB245A4B900020D9AF /* MemberItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberItem.swift; sourceTree = "<group>"; };
 		0CA67B162451696000F606F1 /* FoodPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA67B192451696000F606F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CA67B1B2451696000F606F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -200,6 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				0CBBAD452458998D00CA70DC /* Item.swift */,
+				0C0480CB245A4B900020D9AF /* MemberItem.swift */,
 				0CBBAD472458A52500CA70DC /* ResInfo.swift */,
 			);
 			path = Models;
@@ -223,6 +232,9 @@
 			isa = PBXGroup;
 			children = (
 				0CA67B4E24517C7C00F606F1 /* MemberLoginViewController.swift */,
+				0C0480C3245A25380020D9AF /* MemberHomeViewController.swift */,
+				0C0480C5245A26D50020D9AF /* ItemCell.swift */,
+				0C0480C6245A26D50020D9AF /* ItemCell.xib */,
 			);
 			path = Member;
 			sourceTree = "<group>";
@@ -363,6 +375,7 @@
 				0CEBD542245403BE00E7EE65 /* AddCell.xib in Resources */,
 				0CA67B5324518FBE00F606F1 /* GoogleService-Info.plist in Resources */,
 				0CEBD53E2453C59800E7EE65 /* PostCell.xib in Resources */,
+				0C0480C8245A26D50020D9AF /* ItemCell.xib in Resources */,
 				0CA67B232451696100F606F1 /* Assets.xcassets in Resources */,
 				0CA67B212451696000F606F1 /* Main.storyboard in Resources */,
 			);
@@ -498,9 +511,12 @@
 				0CA67B1A2451696000F606F1 /* AppDelegate.swift in Sources */,
 				0CBBAD482458A52500CA70DC /* ResInfo.swift in Sources */,
 				0CA67B1C2451696000F606F1 /* SceneDelegate.swift in Sources */,
+				0C0480CC245A4B900020D9AF /* MemberItem.swift in Sources */,
 				0CA67B512451895500F606F1 /* RestaurantLoginViewController.swift in Sources */,
 				0CEBD53D2453C59800E7EE65 /* PostCell.swift in Sources */,
+				0C0480C7245A26D50020D9AF /* ItemCell.swift in Sources */,
 				0CBBAD462458998D00CA70DC /* Item.swift in Sources */,
+				0C0480C4245A25380020D9AF /* MemberHomeViewController.swift in Sources */,
 				0CA67B4F24517C7C00F606F1 /* MemberLoginViewController.swift in Sources */,
 				0CEBD53A2453C4F500E7EE65 /* RestaurantHomeViewController.swift in Sources */,
 				0CA67B4D2451751E00F606F1 /* RegisterViewController.swift in Sources */,

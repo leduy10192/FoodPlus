@@ -54,6 +54,7 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="green-circle" translatesAutoresizingMaskIntoConstraints="NO" id="c6u-8G-z0y">
                                 <rect key="frame" x="0.0" y="0.0" width="39" height="36"/>
+                                <color key="backgroundColor" red="0.98431372549999996" green="0.98823529409999999" blue="0.92941176469999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Npe-l9-sXq">
                                 <rect key="frame" x="15" y="9.5" width="9" height="17"/>
@@ -62,7 +63,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="c6u-8G-z0y" secondAttribute="bottom" id="2dI-3I-E2h"/>
                             <constraint firstItem="Npe-l9-sXq" firstAttribute="centerY" secondItem="c6u-8G-z0y" secondAttribute="centerY" id="FGQ-BA-o1Y"/>

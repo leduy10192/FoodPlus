@@ -33,7 +33,8 @@ This app helps restaurant sell excess food at discounted price and helps consume
    - [ ] User can edit their info and items in the list
 * Food consumer
    - [x] User logs into app
-   - [ ] User can view current dishes
+   - [x] User can view current dishes
+   - [x] User can search for food based on name and location
    - [ ] User can add a dish to cart
    - [ ] User can place order
    

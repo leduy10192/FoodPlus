@@ -106,6 +106,7 @@ class MemberHomeViewController: UIViewController, UICollectionViewDataSource, UI
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ItemCell", for: indexPath) as! ItemCell
+        cell.delegate = self
         let item: MemberItem
         if isFiltering {
           item = filteredItems[indexPath.row]
@@ -124,9 +125,6 @@ class MemberHomeViewController: UIViewController, UICollectionViewDataSource, UI
         return cell
     }
     
-
-
-
     
     /*
      // MARK: - Navigation
@@ -169,4 +167,15 @@ extension MemberHomeViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, selectedScopeButtonIndexDidChange selectedScope: Int) {
         filterContentForSearchText(searchBar.text!, scope: searchBar.scopeButtonTitles![selectedScope])
     }
+}
+
+extension MemberHomeViewController: AlertDelegate{
+    func presentAlert(title: String, message: String) {
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        alert.addAction(UIAlertAction.init(title: "Cancel", style: .cancel, handler: nil))
+        present(alert, animated: true)
+    }
+    
+    
 }

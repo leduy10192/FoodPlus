@@ -9,7 +9,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemCell" customModule="FoodPlus" customModuleProvider="target">
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="gTV-IL-0wX" customClass="ItemCell" customModule="FoodPlus" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="206" height="239"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -49,7 +49,7 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u2p-SN-Puk">
-                        <rect key="frame" x="152" y="138.5" width="39" height="36"/>
+                        <rect key="frame" x="157" y="138.5" width="39" height="36"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="green-circle" translatesAutoresizingMaskIntoConstraints="NO" id="bzj-Op-NkY">
                                 <rect key="frame" x="0.0" y="0.0" width="39" height="36"/>
@@ -77,38 +77,34 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Wt-Kh-EYG">
-                        <rect key="frame" x="170" y="5" width="26" height="22"/>
-                        <state key="normal" image="cart.badge.plus" catalog="system"/>
-                        <connections>
-                            <action selector="cartIconPressed:" destination="gTV-IL-0wX" eventType="touchUpInside" id="sHq-jn-1wX"/>
-                        </connections>
-                    </button>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" image="cart.badge.plus" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="yro-0D-Yi1">
+                        <rect key="frame" x="170" y="5" width="26" height="20"/>
+                    </imageView>
                 </subviews>
             </view>
             <color key="backgroundColor" red="0.99562448260000003" green="0.99330037829999995" blue="0.92940324539999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
             <constraints>
+                <constraint firstItem="u2p-SN-Puk" firstAttribute="trailing" secondItem="yro-0D-Yi1" secondAttribute="trailing" id="0ej-9g-e93"/>
+                <constraint firstItem="yro-0D-Yi1" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="7a3-Uw-eMo"/>
                 <constraint firstItem="6j7-JO-kpe" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="ApA-Jv-n6L"/>
                 <constraint firstItem="Rai-2p-ifw" firstAttribute="top" secondItem="6j7-JO-kpe" secondAttribute="bottom" constant="5" id="JH9-ro-EuF"/>
                 <constraint firstItem="rvR-ta-QWK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="JvZ-aN-P9l"/>
                 <constraint firstItem="u2p-SN-Puk" firstAttribute="bottom" secondItem="rvR-ta-QWK" secondAttribute="bottom" constant="10" id="LOY-um-Q9e"/>
-                <constraint firstItem="0Wt-Kh-EYG" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Lal-cK-1c8"/>
-                <constraint firstAttribute="trailing" secondItem="0Wt-Kh-EYG" secondAttribute="trailing" constant="10" id="N0m-yB-FUt"/>
                 <constraint firstItem="Rai-2p-ifw" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="PLY-ov-h0m"/>
                 <constraint firstItem="2rD-gc-tq3" firstAttribute="top" secondItem="MLC-Gp-fPc" secondAttribute="bottom" constant="5" id="SnA-Jt-Jrt"/>
-                <constraint firstItem="u2p-SN-Puk" firstAttribute="trailing" secondItem="0Wt-Kh-EYG" secondAttribute="trailing" constant="-5" id="X1h-8x-1pz"/>
                 <constraint firstItem="2rD-gc-tq3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="Xch-HX-JlO"/>
                 <constraint firstItem="MLC-Gp-fPc" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="Xre-ia-KRa"/>
                 <constraint firstItem="rvR-ta-QWK" firstAttribute="top" secondItem="2rD-gc-tq3" secondAttribute="bottom" constant="7" id="cKt-Pd-bSZ"/>
                 <constraint firstItem="6j7-JO-kpe" firstAttribute="top" secondItem="rvR-ta-QWK" secondAttribute="bottom" constant="5" id="d11-n2-fVe"/>
                 <constraint firstItem="MLC-Gp-fPc" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="10" id="ejz-dS-5vs"/>
                 <constraint firstAttribute="trailing" secondItem="Ifn-GW-OhX" secondAttribute="trailing" constant="10" id="ffS-rW-34P"/>
+                <constraint firstAttribute="trailing" secondItem="yro-0D-Yi1" secondAttribute="trailing" constant="10" id="nfn-AO-JKv"/>
                 <constraint firstItem="Ifn-GW-OhX" firstAttribute="top" secondItem="Rai-2p-ifw" secondAttribute="bottom" constant="5" id="ouk-VX-6yH"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
             <size key="customSize" width="215" height="219"/>
             <connections>
-                <outlet property="cartButton" destination="0Wt-Kh-EYG" id="lq5-yF-Wkj"/>
+                <outlet property="cartIcon" destination="yro-0D-Yi1" id="SDx-9k-7A5"/>
                 <outlet property="dateLabel" destination="Ifn-GW-OhX" id="Ycr-r2-UyW"/>
                 <outlet property="greenCircleLabel" destination="bzj-Op-NkY" id="poj-ur-Fz8"/>
                 <outlet property="itemNameLabel" destination="MLC-Gp-fPc" id="Iub-yQ-VwJ"/>

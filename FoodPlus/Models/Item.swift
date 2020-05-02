@@ -37,6 +37,9 @@ struct Item {
 //        self.date = date
 //        self.resName = resName
 //    }
+    var price$ : String {
+        return "$\(price)"
+    }
     var location : String {
         let loc = "\(city), \(state) \(zip)"
         return loc

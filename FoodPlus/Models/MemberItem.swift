@@ -22,7 +22,7 @@ struct MemberItem {
     let zip : String
     let resName: String
     let date : Double
-    
+    let phoneNumber : String
         
     
 //    init(name: String, email: String, uid: String, price: String, quantity: String, unit: String, isAvail: Bool, imageURLString: String, resName: String, date: Double){

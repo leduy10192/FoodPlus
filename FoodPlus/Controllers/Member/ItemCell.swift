@@ -17,7 +17,7 @@ class ItemCell: UICollectionViewCell {
 
     @IBOutlet weak var itemNameLabel: UILabel!
     @IBOutlet weak var resNameLabel: UILabel!
-    @IBOutlet weak var cartButton: UIButton!
+    @IBOutlet weak var cartIcon: UIImageView!
     @IBOutlet weak var priceLabel: UILabel!
     
     @IBOutlet weak var greenCircleLabel: UIImageView!
@@ -27,18 +27,19 @@ class ItemCell: UICollectionViewCell {
     @IBOutlet weak var locationLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     
-    var delegate: AlertDelegate?
+//    var delegate: AlertDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
     @IBAction func cartIconPressed(_ sender: UIButton) {
-        let itemName = itemNameLabel.text!
-        delegate?.presentAlert(title: "Add to Cart", message: "Do you want to add \(itemName) to your cart?")
-        priceLabel.text = "Sold out"
-        priceLabel.textColor = #colorLiteral(red: 0.3724936843, green: 0, blue: 0.1352183819, alpha: 1)
-        greenCircleLabel.isHidden = true
+//        let itemName = itemNameLabel.text!
+//        delegate?.presentAlert(title: "Add to Cart", message: "Do you want to add \(itemName) to your cart?")
+        
+//        priceLabel.text = "Sold out"
+//        priceLabel.textColor = #colorLiteral(red: 0.3724936843, green: 0, blue: 0.1352183819, alpha: 1)
+//        greenCircleLabel.isHidden = true
 
     }
 

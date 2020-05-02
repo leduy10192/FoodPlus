@@ -21,7 +21,7 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
     @IBOutlet weak var itemNameLabel: UITextField!
     @IBOutlet weak var quantityLabel: UITextField!
     @IBOutlet weak var unitLabel: UITextField!
-    @IBOutlet weak var priceLabel: UITextField!
+    @IBOutlet weak var priceTextField: UITextField!
     
     var resInfo : ResInfo?
     var imagePicker = UIImagePickerController()
@@ -32,6 +32,7 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
     override func viewDidLoad() {
         super.viewDidLoad()
         imagePicker.delegate = self
+        priceTextField.delegate = self
         // Do any additional setup after loading the view.
         view.addSubview(activityIndicator)
         activityIndicator.centerInSuperview()
@@ -102,7 +103,7 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
             let itemName = itemNameLabel.text, itemName != "",
             let quantity = quantityLabel.text, quantity != "",
             let unit = unitLabel.text, unit != "",
-            let price = priceLabel.text, price != ""
+            let price = priceTextField.text, price != ""
             else{
                 presentAlert(title: "Error", message: "Some fields are missing.")
                 return
@@ -142,6 +143,7 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
                 let documentUid = dataReference.documentID
                 
                 let urlString = url.absoluteString
+                let price$ = "$\(price)"
                 let data = [
                     K.FStore.uid: documentUid,
                     K.FStore.imageUrl: urlString,
@@ -150,7 +152,7 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
                     K.FStore.itemName : itemName,
                     K.FStore.quantity : quantity,
                     K.FStore.unit : unit,
-                    K.FStore.price : price,
+                    K.FStore.price : price$,
                     K.FStore.date: Date().timeIntervalSince1970,
                     K.FStore.resName : resName,
                     K.FStore.phoneNumber : phoneNumber,
@@ -196,5 +198,9 @@ class RestaurantAddItemController: UIViewController, UIImagePickerControllerDele
     */
 
 }
-
-
+extension RestaurantAddItemController: UITextFieldDelegate{
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        // remove non-numerics and compare with original string
+        return string == string.filter("0123456789".contains)
+    }
+}

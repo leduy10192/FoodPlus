@@ -11,6 +11,7 @@
 		0C0480C7245A26D50020D9AF /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0480C5245A26D50020D9AF /* ItemCell.swift */; };
 		0C0480C8245A26D50020D9AF /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0C0480C6245A26D50020D9AF /* ItemCell.xib */; };
 		0C0480CC245A4B900020D9AF /* MemberItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0480CB245A4B900020D9AF /* MemberItem.swift */; };
+		0C0480CE245ABB2E0020D9AF /* BadgedBarButtonItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0480CD245ABB2E0020D9AF /* BadgedBarButtonItem.swift */; };
 		0CA67B1A2451696000F606F1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA67B192451696000F606F1 /* AppDelegate.swift */; };
 		0CA67B1C2451696000F606F1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA67B1B2451696000F606F1 /* SceneDelegate.swift */; };
 		0CA67B1E2451696000F606F1 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA67B1D2451696000F606F1 /* WelcomeViewController.swift */; };
@@ -24,6 +25,9 @@
 		0CA67B512451895500F606F1 /* RestaurantLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA67B502451895500F606F1 /* RestaurantLoginViewController.swift */; };
 		0CA67B5324518FBE00F606F1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0CA67B5224518FBE00F606F1 /* GoogleService-Info.plist */; };
 		0CA67B55245196FF00F606F1 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CA67B54245196FF00F606F1 /* Constant.swift */; };
+		0CB48867245CDDAA002F8266 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB48866245CDDAA002F8266 /* CartViewController.swift */; };
+		0CB4886A245CDE87002F8266 /* CartCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB48868245CDE87002F8266 /* CartCell.swift */; };
+		0CB4886B245CDE87002F8266 /* CartCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0CB48869245CDE87002F8266 /* CartCell.xib */; };
 		0CBBAD462458998D00CA70DC /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAD452458998D00CA70DC /* Item.swift */; };
 		0CBBAD482458A52500CA70DC /* ResInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBBAD472458A52500CA70DC /* ResInfo.swift */; };
 		0CEBD53A2453C4F500E7EE65 /* RestaurantHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEBD5392453C4F500E7EE65 /* RestaurantHomeViewController.swift */; };
@@ -60,6 +64,7 @@
 		0C0480C5245A26D50020D9AF /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		0C0480C6245A26D50020D9AF /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
 		0C0480CB245A4B900020D9AF /* MemberItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberItem.swift; sourceTree = "<group>"; };
+		0C0480CD245ABB2E0020D9AF /* BadgedBarButtonItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BadgedBarButtonItem.swift; sourceTree = "<group>"; };
 		0CA67B162451696000F606F1 /* FoodPlus.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodPlus.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CA67B192451696000F606F1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0CA67B1B2451696000F606F1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +84,9 @@
 		0CA67B502451895500F606F1 /* RestaurantLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantLoginViewController.swift; sourceTree = "<group>"; };
 		0CA67B5224518FBE00F606F1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		0CA67B54245196FF00F606F1 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		0CB48866245CDDAA002F8266 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		0CB48868245CDE87002F8266 /* CartCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartCell.swift; sourceTree = "<group>"; };
+		0CB48869245CDE87002F8266 /* CartCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CartCell.xib; sourceTree = "<group>"; };
 		0CBBAD452458998D00CA70DC /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0CBBAD472458A52500CA70DC /* ResInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResInfo.swift; sourceTree = "<group>"; };
 		0CEBD5392453C4F500E7EE65 /* RestaurantHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantHomeViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +243,10 @@
 				0C0480C3245A25380020D9AF /* MemberHomeViewController.swift */,
 				0C0480C5245A26D50020D9AF /* ItemCell.swift */,
 				0C0480C6245A26D50020D9AF /* ItemCell.xib */,
+				0C0480CD245ABB2E0020D9AF /* BadgedBarButtonItem.swift */,
+				0CB48866245CDDAA002F8266 /* CartViewController.swift */,
+				0CB48868245CDE87002F8266 /* CartCell.swift */,
+				0CB48869245CDE87002F8266 /* CartCell.xib */,
 			);
 			path = Member;
 			sourceTree = "<group>";
@@ -378,6 +390,7 @@
 				0C0480C8245A26D50020D9AF /* ItemCell.xib in Resources */,
 				0CA67B232451696100F606F1 /* Assets.xcassets in Resources */,
 				0CA67B212451696000F606F1 /* Main.storyboard in Resources */,
+				0CB4886B245CDE87002F8266 /* CartCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,7 +527,9 @@
 				0C0480CC245A4B900020D9AF /* MemberItem.swift in Sources */,
 				0CA67B512451895500F606F1 /* RestaurantLoginViewController.swift in Sources */,
 				0CEBD53D2453C59800E7EE65 /* PostCell.swift in Sources */,
+				0CB48867245CDDAA002F8266 /* CartViewController.swift in Sources */,
 				0C0480C7245A26D50020D9AF /* ItemCell.swift in Sources */,
+				0CB4886A245CDE87002F8266 /* CartCell.swift in Sources */,
 				0CBBAD462458998D00CA70DC /* Item.swift in Sources */,
 				0C0480C4245A25380020D9AF /* MemberHomeViewController.swift in Sources */,
 				0CA67B4F24517C7C00F606F1 /* MemberLoginViewController.swift in Sources */,
@@ -522,6 +537,7 @@
 				0CA67B4D2451751E00F606F1 /* RegisterViewController.swift in Sources */,
 				0CEBD544245417A400E7EE65 /* RestaurantAddItemController.swift in Sources */,
 				0CEBD541245403BE00E7EE65 /* AddCell.swift in Sources */,
+				0C0480CE245ABB2E0020D9AF /* BadgedBarButtonItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -119,6 +119,16 @@ class RestaurantHomeViewController: UIViewController, UICollectionViewDataSource
             }
         }
     }
+    @IBAction func logout(_ sender: Any) {
+        do {
+          try Auth.auth().signOut()
+            //navigate user to welcome screen
+            navigationController?.popToRootViewController(animated: true)
+        } catch let signOutError as NSError {
+          print ("Error signing out: %@", signOutError)
+        }
+    }
+    
     @IBAction func editResInfoPressed(_ sender: UIButton) {
         let email = (Auth.auth().currentUser?.email!)!
         db.collection(K.FStore.restaurant).document(email).setData([K.FStore.city : "San Mateo"], merge: true)

@@ -11,7 +11,8 @@ struct K {
     static let memberLogSeg = "memberToHome"
     static let cellNibName = "PostCell"
     static let cellIdentifier = "PostCell"
-    
+    static let MhomeToMCart = "MhomeToMCart"
+    static let cartCell = "CartCell"
     
 
     
@@ -41,6 +42,8 @@ struct K {
         static let imageUrl = "imageUrl"
         static let date = "date"
         static let resName = "resName"
+        static let cart = "cart"
+        static let memberOrders = "memberOrders"
     }
 }
 

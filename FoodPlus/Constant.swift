@@ -13,8 +13,8 @@ struct K {
     static let cellIdentifier = "PostCell"
     static let MhomeToMCart = "MhomeToMCart"
     static let cartCell = "CartCell"
-    
-
+    static let CartToOrderConfirm = "CartToOrderConfirm"
+    static let OrderConfirmToHome = "OrderConfirmToHome"
     
     struct FStore {
 
@@ -28,6 +28,9 @@ struct K {
         static let zip = "zip"
         static let phoneNumber = "phoneNumber"
         static let userType = "userType"
+        static let memberName = "memberName"
+        static let memberPhoneNum = "memberPhoneNum"
+        static let memberEmail = "memberEmail"
         
         static let orders = "orders"
         static let itemName = "name"
@@ -44,6 +47,7 @@ struct K {
         static let resName = "resName"
         static let cart = "cart"
         static let memberOrders = "memberOrders"
+        static let lastUpdated = "lastUpdated"
     }
 }
 

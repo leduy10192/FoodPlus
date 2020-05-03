@@ -209,7 +209,12 @@ extension MemberHomeViewController: UICollectionViewDataSource{
 //            }
             cell.resNameLabel.text = item.resName
             cell.itemNameLabel.text = item.name
-            cell.priceLabel.text = item.price
+            if item.isAvail == false{
+                cell.greenCircleLabel.alpha = 0.0
+                cell.priceLabel.text = "Sold out"
+            }else{
+                cell.priceLabel.text = item.price
+            }
             cell.quantityLabel.text = item.quantityUnit
             cell.dateLabel.text = item.dateString
             cell.locationLabel.text = item.location
@@ -238,7 +243,7 @@ extension MemberHomeViewController: UICollectionViewDelegate{
             let data = [
             K.FStore.uid: item.uid,
             K.FStore.imageUrl: item.imageURLString,
-            K.FStore.email : email,
+            K.FStore.email : item.email,
             K.FStore.isAvail: true,
             K.FStore.itemName : item.name,
             K.FStore.quantity : item.quantity,

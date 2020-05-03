@@ -16,6 +16,7 @@ class PostCell: UICollectionViewCell {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var editLabel: UIImageView!
+    @IBOutlet weak var greenCircle: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()

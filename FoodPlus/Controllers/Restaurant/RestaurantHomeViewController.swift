@@ -157,7 +157,12 @@ class RestaurantHomeViewController: UIViewController, UICollectionViewDataSource
         }else{
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: K.cellIdentifier, for: indexPath) as! PostCell
             cell.nameLabel.text = items[indexPath.row].name
-            cell.priceLabel.text = items[indexPath.row].price
+            if(items[indexPath.row].isAvail == false){
+                cell.priceLabel.text = "Sold out"
+                cell.greenCircle.alpha = 0.0
+            }else{
+                cell.priceLabel.text = items[indexPath.row].price
+            }
             cell.quantityLabel.text = items[indexPath.row].quantityUnit
             cell.dateLabel.text = items[indexPath.row].dateString
             if let imageURL = items[indexPath.row].imageURL{

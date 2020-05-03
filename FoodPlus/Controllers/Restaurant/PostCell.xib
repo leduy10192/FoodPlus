@@ -96,6 +96,7 @@
             <connections>
                 <outlet property="dateLabel" destination="L6H-QI-CgJ" id="bCB-rP-OJ8"/>
                 <outlet property="editLabel" destination="6kN-hZ-dTt" id="aWN-bI-d2f"/>
+                <outlet property="greenCircle" destination="c6u-8G-z0y" id="gwg-vm-FcL"/>
                 <outlet property="nameLabel" destination="jch-Ya-ecj" id="OLB-qB-Kui"/>
                 <outlet property="postImage" destination="ZPg-XW-XUY" id="lk0-ew-cAf"/>
                 <outlet property="priceLabel" destination="Npe-l9-sXq" id="YxJ-n4-LQc"/>

@@ -36,7 +36,7 @@ This app helps restaurant sell excess food at discounted price and helps consume
    - [x] User can view current dishes
    - [x] User can search for food based on name and location
    - [x] User can add a dish to cart
-   - [ ] User can place order
+   - [x] User can place order
    
 **Optional Nice-to-have Stories**
 
@@ -118,6 +118,7 @@ This app helps restaurant sell excess food at discounted price and helps consume
 ### Member
 <p float="left">
 <img src = "http://g.recordit.co/c41XgyGvkO.gif" width = 200 >"
+<img src = "http://g.recordit.co/PF8ajngEiS.gif" width = 200 hspace = 120>"
 </p>
 
 

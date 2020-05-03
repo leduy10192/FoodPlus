@@ -79,18 +79,18 @@ This app helps restaurant sell excess food at discounted price and helps consume
 
 <h4>Seller Screen </h4>
 <p float="left">
-<img src="https://user-images.githubusercontent.com/47465901/79529454-8e6cea00-8021-11ea-862b-00bc0adec5a3.png" width = 250 hspace = 20>
-<img src="https://user-images.githubusercontent.com/47465901/79529513-b52b2080-8021-11ea-865a-7be58bdfe19f.png" width = 250>
+<img src="https://user-images.githubusercontent.com/47465901/79529454-8e6cea00-8021-11ea-862b-00bc0adec5a3.png" width = 200 hspace = 20>
+<img src="https://user-images.githubusercontent.com/47465901/79529513-b52b2080-8021-11ea-865a-7be58bdfe19f.png" width = 200>
 </p>
 <h4>Buyer Screen </h4>
 <p float="left">
-<img src="https://user-images.githubusercontent.com/47465901/79529750-54e8ae80-8022-11ea-851b-389f74c6cd00.png" width = 250 hspace = 20>
-<img src="https://user-images.githubusercontent.com/47465901/79530036-16072880-8023-11ea-803e-47d5c8cb6030.png" width = 250>
+<img src="https://user-images.githubusercontent.com/47465901/79529750-54e8ae80-8022-11ea-851b-389f74c6cd00.png" width = 200 hspace = 20>
+<img src="https://user-images.githubusercontent.com/47465901/79530036-16072880-8023-11ea-803e-47d5c8cb6030.png" width = 200>
 </p>
 
 ### [BONUS] Interactive Prototype
 
-<img src="http://g.recordit.co/d88T9J4vJ0.gif" width=300>
+<img src="http://g.recordit.co/d88T9J4vJ0.gif" width=250>
 
 ## Schema
 ### Model
@@ -111,14 +111,14 @@ This app helps restaurant sell excess food at discounted price and helps consume
 ### Restaurant
 <p float="left">
 <img src = "http://g.recordit.co/KxrQjfFv3p.gif" width = 200 >
-<img src = "http://g.recordit.co/EJTytGCpCY.gif" width = 200 hspace = 120>"
+<img src = "http://g.recordit.co/EJTytGCpCY.gif" width = 200 hspace = 120>
 <img src = "http://g.recordit.co/zDrqovgRrH.gif" width = 200 >
 </p>
 
 ### Member
 <p float="left">
 <img src = "http://g.recordit.co/c41XgyGvkO.gif" width = 200 >
-<img src = "http://g.recordit.co/PF8ajngEiS.gif" width = 200 hspace = 120>"
+<img src = "http://g.recordit.co/PF8ajngEiS.gif" width = 200 hspace = 120>
 </p>
 
 ## License

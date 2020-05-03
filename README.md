@@ -110,14 +110,14 @@ This app helps restaurant sell excess food at discounted price and helps consume
 ## Demo
 ### Restaurant
 <p float="left">
-<img src = "http://g.recordit.co/KxrQjfFv3p.gif" width = 200 >"
+<img src = "http://g.recordit.co/KxrQjfFv3p.gif" width = 200 >
 <img src = "http://g.recordit.co/EJTytGCpCY.gif" width = 200 hspace = 120>"
-<img src = "http://g.recordit.co/zDrqovgRrH.gif" width = 200 >"
+<img src = "http://g.recordit.co/zDrqovgRrH.gif" width = 200 >
 </p>
 
 ### Member
 <p float="left">
-<img src = "http://g.recordit.co/c41XgyGvkO.gif" width = 200 >"
+<img src = "http://g.recordit.co/c41XgyGvkO.gif" width = 200 >
 <img src = "http://g.recordit.co/PF8ajngEiS.gif" width = 200 hspace = 120>"
 </p>
 

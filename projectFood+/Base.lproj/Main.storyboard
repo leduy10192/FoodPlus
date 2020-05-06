@@ -47,7 +47,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <color key="sectionIndexBackgroundColor" red="0.96587198969999999" green="0.94066244359999995" blue="0.70606464150000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="328" id="EZe-ET-OJD">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ItemCell" rowHeight="328" id="EZe-ET-OJD" customClass="ItemCell" customModule="projectFood_" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="328"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="EZe-ET-OJD" id="QGb-YS-z9K">
@@ -81,6 +81,9 @@
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfY-Mz-uwc">
                                                     <rect key="frame" x="20" y="269" width="121" height="29"/>
                                                     <state key="normal" image="add to cart"/>
+                                                    <connections>
+                                                        <action selector="addToCartButton:" destination="EZe-ET-OJD" eventType="touchUpInside" id="kll-nn-BJh"/>
+                                                    </connections>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="post time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ff7-6m-cdD">
                                                     <rect key="frame" x="332" y="277" width="72" height="21"/>
@@ -123,6 +126,14 @@
                                                 <constraint firstItem="Skd-9u-jDk" firstAttribute="leading" secondItem="QGb-YS-z9K" secondAttribute="leading" constant="50" id="zR3-AL-Es3"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="addressLabel" destination="QGb-YS-z9K" id="9xO-2C-zpC"/>
+                                            <outlet property="itemImageView" destination="Skd-9u-jDk" id="scW-nL-YNl"/>
+                                            <outlet property="nameLabel" destination="3Xt-bg-LGt" id="7o8-4B-qiC"/>
+                                            <outlet property="postTimeLabel" destination="ff7-6m-cdD" id="VWw-cr-9CX"/>
+                                            <outlet property="priceLable" destination="ADY-7j-wof" id="kyB-ls-MQa"/>
+                                            <outlet property="storeLabel" destination="NQ2-0v-GKM" id="G89-dJ-ZZb"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -177,6 +188,7 @@
                         </rightBarButtonItems>
                     </navigationItem>
                     <connections>
+                        <outlet property="bigTable" destination="Xdn-99-E8T" id="Yll-pD-l1S"/>
                         <outlet property="table" destination="Jog-wd-BbD" id="yzp-by-dOw"/>
                     </connections>
                 </viewController>

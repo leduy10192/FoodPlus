@@ -11,14 +11,17 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     @IBOutlet var table: UITableView!
-
+    @IBOutlet weak var bigTable: UITableView!
+    
     
     var models = [Model]()
-    
+//    var bigModels = [bigModel]()
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        bigTable.delegate = self
+        bigTable.dataSource = self
         // Do any additional setup after loading the view.
         
         models.append(Model(text: "First", imageName: "Image-1", priceText: "$1"))
@@ -42,6 +45,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         table.register(CollectionTableViewCell.nib(), forCellReuseIdentifier: CollectionTableViewCell.identifier)
         table.delegate = self
         table.dataSource = self
+        
+        
       
     }
     
@@ -52,15 +57,24 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = table.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier, for: indexPath) as! CollectionTableViewCell
-        
-        cell.configure(with: models)
-        
-        return cell
+        if tableView == table{
+            let cell = table.dequeueReusableCell(withIdentifier: CollectionTableViewCell.identifier, for: indexPath) as! CollectionTableViewCell
+            cell.configure(with: models)
+            return cell
+        } else if tableView == bigTable{
+            let cell = bigTable.dequeueReusableCell(withIdentifier: "ItemCell") as! ItemCell
+            return cell
+        }
+        return UITableViewCell()
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 214
+        if tableView == table{
+            return 214
+        } else if tableView == bigTable{
+            return 330
+        }
+        return CGFloat()
     }
 
 }
@@ -77,4 +91,21 @@ struct Model {
     }
 }
 
+//struct bigModel {
+//    let store: String
+//    let address: String
+//    let price: String
+//    let image: String
+//    let name: String
+//    let postTime: String
+//
+//    init(store: String, address: String, price: String, image: String, name: String, postTime: String) {
+//        self.store = store
+//        self.address = address
+//        self.price = price
+//        self.image = image
+//        self.name = name
+//        self.postTime = postTime
+//    }
+//}
 

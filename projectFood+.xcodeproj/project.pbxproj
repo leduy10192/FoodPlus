@@ -13,6 +13,7 @@
 		4C0F5F15244D090B00018893 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F5F13244D090B00018893 /* Main.storyboard */; };
 		4C0F5F17244D090D00018893 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F5F16244D090D00018893 /* Assets.xcassets */; };
 		4C0F5F1A244D090D00018893 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C0F5F18244D090D00018893 /* LaunchScreen.storyboard */; };
+		4C256FFA2463695100DC4956 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C256FF92463695100DC4956 /* ItemCell.swift */; };
 		4C8D217824525CF200FFEE46 /* CollectionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D217624525CF200FFEE46 /* CollectionTableViewCell.swift */; };
 		4C8D217924525CF200FFEE46 /* CollectionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4C8D217724525CF200FFEE46 /* CollectionTableViewCell.xib */; };
 		4C8D217C24525D1600FFEE46 /* MyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C8D217A24525D1600FFEE46 /* MyCollectionViewCell.swift */; };
@@ -28,6 +29,7 @@
 		4C0F5F16244D090D00018893 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4C0F5F19244D090D00018893 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4C0F5F1B244D090D00018893 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C256FF92463695100DC4956 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		4C8D217624525CF200FFEE46 /* CollectionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionTableViewCell.swift; sourceTree = "<group>"; };
 		4C8D217724525CF200FFEE46 /* CollectionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CollectionTableViewCell.xib; sourceTree = "<group>"; };
 		4C8D217A24525D1600FFEE46 /* MyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -73,6 +75,7 @@
 				4C0F5F16244D090D00018893 /* Assets.xcassets */,
 				4C0F5F18244D090D00018893 /* LaunchScreen.storyboard */,
 				4C0F5F1B244D090D00018893 /* Info.plist */,
+				4C256FF92463695100DC4956 /* ItemCell.swift */,
 			);
 			path = "projectFood+";
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				4C0F5F12244D090B00018893 /* ViewController.swift in Sources */,
 				4C8D217C24525D1600FFEE46 /* MyCollectionViewCell.swift in Sources */,
+				4C256FFA2463695100DC4956 /* ItemCell.swift in Sources */,
 				4C0F5F0E244D090B00018893 /* AppDelegate.swift in Sources */,
 				4C0F5F10244D090B00018893 /* SceneDelegate.swift in Sources */,
 				4C8D217824525CF200FFEE46 /* CollectionTableViewCell.swift in Sources */,

@@ -141,11 +141,16 @@ class MemberHomeViewController: UIViewController {
                                 let newItem = MemberItem(name: itemName, email: email, uid: uid, price: price, quantity: quantity, unit: unit, isAvail: isAvail, imageURLString: imageUrlString, city: city, street: street, state: state, zip: zip, resName: resName, date: date, phoneNumber: phoneNumber)
                                 self.cartItems.append(newItem)
                                 //                                print("MemberItem",self.items)
-                                DispatchQueue.main.async {
-                                    print(self.cartItems.count)
-                                    self.cartButton.setBadge(with: self.cartItems.count)
-                                }
+//                                DispatchQueue.main.async {
+//                                    print(self.cartItems.count)
+//                                    self.cartButton.setBadge(with: self.cartItems.count)
+//                                }
                             }
+                        }
+                        DispatchQueue.main.async {
+                            self.activityIndicator.stopAnimating()
+                            print(self.cartItems.count)
+                            self.cartButton.setBadge(with: self.cartItems.count)
                         }
                     }
                 }
